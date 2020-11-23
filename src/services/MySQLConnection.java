@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package service;
+package services;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -28,7 +28,7 @@ public class MySQLConnection {
             System.out.println("Connect successfully!");
         } catch (SQLException ex) {
             System.out.println("Connect failure!");
-            Logger.getLogger(service.MySQLConnection.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(services.MySQLConnection.class.getName()).log(Level.SEVERE, null, ex);
         }
         return conn;
     }

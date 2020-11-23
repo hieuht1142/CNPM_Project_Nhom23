@@ -9,7 +9,7 @@ import java.sql.Date;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import models.PhanAnh;
-import controller.PhanAnhModify;
+import controllers.PhanAnhModify;
 
 /**
  *
@@ -111,7 +111,7 @@ public class InsertPA extends javax.swing.JFrame {
 
         lbState.setText("Trạng thái:");
 
-        cbState.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Mới ghi nhận", "Đang giải quyết", "Đã giải quyết" }));
+        cbState.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Đang giải quyết", "Đã giải quyết" }));
 
         lbContent.setText("Nội Dung Phản Ánh:");
 
